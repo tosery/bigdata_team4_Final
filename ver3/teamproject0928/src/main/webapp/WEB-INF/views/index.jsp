@@ -56,7 +56,7 @@ function drawLogScales() {
    <div id="preloder">
       <div class="loader"></div>
    </div>
-<%-- 
+
    <!-- Offcanvas Menu Begin -->
    <div class="offcanvas-menu-overlay"></div>
    <div class="offcanvas-menu-wrapper">
@@ -97,9 +97,9 @@ function drawLogScales() {
       </div>
    </div>
    <!-- Offcanvas Menu End -->
---%>
+
    <!-- Header Section Begin -->
-	<div class="header__banner-left"  onclick="location.href='http://localhost:8090/products/productsList?type=T&keyword=127';">
+	<div class="header__banner-left"  onclick="location.href='http://localhost:8090/products/productsList?type=T&keyword=코로나';">
 		<h3>코로나19</h3>
 		<h3>방역물품</h3>
 		<h3>최대50%</h3>
@@ -124,7 +124,7 @@ function drawLogScales() {
                </div>
             </div>
          </div>
-         <div class="hero__item set-bg" data-setbg="/resources/img/4team_logomain_.jpg" style=" object-fit: contain;">
+         <div class="hero__item set-bg" data-setbg="/resources/img/4team_logomain_.jpg" >
             <div class="container">
                <div class="row d-flex justify-content-center">
                   <div class="col-lg-8">

@@ -612,7 +612,7 @@ ol {
   padding: 0 200px 0 200px;
 }
 .hero__item {
-  height: 700px;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -620,7 +620,6 @@ ol {
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
-  object-fit: contain;
 }
 
 .hero__text {

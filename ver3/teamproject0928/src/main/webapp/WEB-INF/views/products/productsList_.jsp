@@ -131,7 +131,7 @@
 												<div class="product__item">
 													<a href="/products/details?pnum=${product.pnum}">
 													<div class="product__item__pic set-bg"
-														data-setbg="/resources/img/shop/product-2.jpg">
+														data-setbg="/resources/img/logo_widthVer.png">
 														
 														<div class="product__label">
 															<span>${ product.productName }</span>

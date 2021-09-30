@@ -10,19 +10,13 @@
 </head>
 <body>
 	<form id="frm">
-		<select name="id" class="tempmemberid">
-			<option>abc</option>
-			<option>abcd</option>
-			<option>sye</option>
-			<option>team4</option>
-		</select> 
-		<select class="appraisal">
-
-		</select>
-		<input type="text" name="temperature">
+ 		<div class="col">
+			<input type="text" name="id" placeholder="회원 아이디를 입력하세요.">
+			<input type="text" name="temperature" placeholder="단호박온도 숫자로입력">
+		<button type="submit" id="btn" class="btn btn-lg bg-warning">단호박온도 변경</button>
+ 		</div>
 
 		
-		<button type="submit" id="btn">단호박온도 변경</button>
 	</form>
 
 	<script src="/resources/js/jquery-3.3.1.min.js"></script>

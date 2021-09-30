@@ -241,7 +241,7 @@
    <!-- Checkout Section End -->
 
    <!-- Footer Section Begin -->
-   <footer class="footer set-bg" data-setbg="img/footer-bg.jpg">
+   <footer class="footer set-bg" data-setbg="/resources/img/footer-bg.jpg">
       <div class="container">
          <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-6">
@@ -257,7 +257,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6">
                <div class="footer__about">
                   <div class="footer__logo">
-                     <a href="#"><img src="img/footer-logo.png" alt=""></a>
+                     <a href="#"><img src="/resources/img/footer-logo.png" alt=""></a>
                   </div>
                   <p>Lorem ipsum dolor amet, consectetur adipiscing elit, sed do
                      eiusmod tempor incididunt ut labore dolore magna aliqua.</p>

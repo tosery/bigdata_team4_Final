@@ -393,7 +393,13 @@ public class MemberController {
 
    }
 	// ******************************temper**********************************
-	   @GetMapping("/temperature")
+	   
+   		@GetMapping("/appraisalMember")
+   		public String appraisal() {
+   			return "member/appraisalMember";
+   		}
+   
+   		@GetMapping("/temperature")
 	   public String info(Model model, String id, HttpSession session) {
 	      session.setAttribute("id", id);
 	      MemberVO memberVO = memberService.getMemberById(id);

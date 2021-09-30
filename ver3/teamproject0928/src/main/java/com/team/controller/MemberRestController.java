@@ -57,6 +57,14 @@ public class MemberRestController {
 		return new ResponseEntity<List<MemberVO>>(memberList, HttpStatus.OK);
 	} // getAll
 	
+//	@GetMapping(value="/member/appraisalMember", produces = { MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE })
+//	public ResponseEntity<String> appraisal(){
+//		
+//		
+//		
+//		return new ResponseEntity<String> (,HttpStatus.OK);
+//	}
+	
 	@PutMapping(value = "/members/{id}",
 			consumes = "application/json",
 			produces = { MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE })

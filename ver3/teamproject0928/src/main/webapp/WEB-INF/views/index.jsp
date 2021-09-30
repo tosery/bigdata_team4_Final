@@ -56,7 +56,7 @@ function drawLogScales() {
    <div id="preloder">
       <div class="loader"></div>
    </div>
-
+<%-- 
    <!-- Offcanvas Menu Begin -->
    <div class="offcanvas-menu-overlay"></div>
    <div class="offcanvas-menu-wrapper">
@@ -97,14 +97,14 @@ function drawLogScales() {
       </div>
    </div>
    <!-- Offcanvas Menu End -->
-
+--%>
    <!-- Header Section Begin -->
-	<div class="header__banner-left"  onclick="location.href='http://localhost:8090/products/productsList?type=T&keyword=코로나';">
-		<h3>코로나19</h3>
-		<h3>방역물품</h3>
-		<h3>최대50%</h3>
-		<h3>클릭</h3>
-	</div>
+   <div class="header__banner-left"  onclick="location.href='http://localhost:8090/products/productsList?type=T&keyword=코로나';">
+      <h3>코로나19</h3>
+      <h3>방역물품</h3>
+      <h3>최대50%</h3>
+      <h3>클릭</h3>
+   </div>
    <jsp:include page="/WEB-INF/views/include/Nav.jsp" />
    <!-- Header Section End -->
 
@@ -124,7 +124,7 @@ function drawLogScales() {
                </div>
             </div>
          </div>
-         <div class="hero__item set-bg" data-setbg="/resources/img/4team_logomain_.jpg" >
+         <div class="hero__item set-bg" data-setbg="/resources/img/4team_logomain_.jpg" style=" object-fit: contain;">
             <div class="container">
                <div class="row d-flex justify-content-center">
                   <div class="col-lg-8">
@@ -149,6 +149,7 @@ function drawLogScales() {
                <div class="section-title">
                   <span>코로나 방역물품 50% 할인</span>
                   <h2>손소독제, 마스크</h2>
+                   <button class="btn btn-lg bg-warning d-flex flex-row justify-content-center " onclick="location.href='http://localhost:8090/products/productsList?type=T&keyword=코로나';">방역물품 사러가기</button>
                </div>
             </div>
          </div>
@@ -157,35 +158,35 @@ function drawLogScales() {
             <div id="chart_div"></div>
          </div>
          <div class="col-sm-4">
-         		<table border="1">
-		<thead>
-			<tr>
-				<th>기준일</th>
-				<th>확진자수</th>
-				<th>사망자수</th>
-				<th>누적확진률</th>
-			</tr>
-		</thead>
-		<tbody>
-			<c:choose>
-				<c:when test="${ fn:length(covidList) gt 0 }">
-					<c:forEach var="covid" items="${ covidList }">
-						<tr>
-							<td>${ covid.stateDt }</td>
-							<td>${ covid.decideCnt }</td>
-							<td>${ covid.deathCnt }</td>
-							<td>${ covid.accDefRate }</td>
-						</tr>
-					</c:forEach>
-				</c:when>
-				<c:otherwise>
-					<tr>
-						<td colspan="5">데이터가 없습니다.</td>
-					</tr>
-				</c:otherwise>
-			</c:choose>
-		</tbody>
-	</table>
+               <table border="1">
+      <thead>
+         <tr>
+            <th>기준일</th>
+            <th>확진자수</th>
+            <th>사망자수</th>
+            <th>누적확진률</th>
+         </tr>
+      </thead>
+      <tbody>
+         <c:choose>
+            <c:when test="${ fn:length(covidList) gt 0 }">
+               <c:forEach var="covid" items="${ covidList }">
+                  <tr>
+                     <td>${ covid.stateDt }</td>
+                     <td>${ covid.decideCnt }</td>
+                     <td>${ covid.deathCnt }</td>
+                     <td>${ covid.accDefRate }</td>
+                  </tr>
+               </c:forEach>
+            </c:when>
+            <c:otherwise>
+               <tr>
+                  <td colspan="5">데이터가 없습니다.</td>
+               </tr>
+            </c:otherwise>
+         </c:choose>
+      </tbody>
+   </table>
          </div>
          </div>
       </div>
@@ -211,8 +212,8 @@ function drawLogScales() {
                                     <img src="/resources/img/team4_img01.jpg" alt="">
                                 </div>
                                 <div class="testimonial__author__text">
-                                    <h5>Kerry D.Silva</h5>
-                                    <span>New york</span>
+                                    <h5>박준영</h5>
+                                    <span>금정구</span>
                                 </div>
                             </div>
                             <div class="rating">
@@ -222,8 +223,9 @@ function drawLogScales() {
                                 <span class="icon_star"></span>
                                 <span class="icon_star-half_alt"></span>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua viverra lacus vel facilisis.</p>
+                            <p>특기 : 닭강정 10알 사서 열흘에 나눠 먹기.<br>
+                               취미 :  토리에게 산책 당하기.<br>
+                               특이사항 : 미공개 복근 보유.</p>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -233,8 +235,8 @@ function drawLogScales() {
                                     <img src="/resources/img/team4_img02.png"" alt="">
                                 </div>
                                 <div class="testimonial__author__text">
-                                    <h5>Kerry D.Silva</h5>
-                                    <span>New york</span>
+                                    <h5>정민욱</h5>
+                                    <span>사상구</span>
                                 </div>
                             </div>
                             <div class="rating">
@@ -244,8 +246,9 @@ function drawLogScales() {
                                 <span class="icon_star"></span>
                                 <span class="icon_star-half_alt"></span>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua viverra lacus vel facilisis.</p>
+                            <p>특기 : 자기 괴롭히는 사람 이름 데스노트에 적기.<br>
+                               취미 : 노트 사러 가기.<br>
+                               특이사항 : 용트름 가능.</p>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -255,8 +258,8 @@ function drawLogScales() {
                                     <img src="/resources/img/team4_img03.png" alt="">
                                 </div>
                                 <div class="testimonial__author__text">
-                                    <h5>Ophelia Nunez</h5>
-                                    <span>London</span>
+                                    <h5>심예은</h5>
+                                    <span>남구</span>
                                 </div>
                             </div>
                             <div class="rating">
@@ -266,8 +269,9 @@ function drawLogScales() {
                                 <span class="icon_star"></span>
                                 <span class="icon_star-half_alt"></span>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua viverra lacus vel facilisis.</p>
+                            <p>특기 : 성대모사.<br>
+                               취미 : 준영&민욱 괴롭히기(하극상).<br>
+                               특이사항 : 어린 시절 고구마를 닮음.</p>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -277,8 +281,8 @@ function drawLogScales() {
                                     <img src="/resources/img/team4_img04.png" alt="">
                                 </div>
                                 <div class="testimonial__author__text">
-                                    <h5>Kerry D.Silva</h5>
-                                    <span>New york</span>
+                                    <h5>임수진</h5>
+                                    <span>사상구</span>
                                 </div>
                             </div>
                             <div class="rating">
@@ -288,8 +292,9 @@ function drawLogScales() {
                                 <span class="icon_star"></span>
                                 <span class="icon_star-half_alt"></span>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua viverra lacus vel facilisis.</p>
+                            <p>특기 : 킹코브라 만들기.<br>
+                               취미 : 준영&민욱 괴롭히기(하극상).<br>
+                               특이사항 : 학원 수강생 중 한 명의 열혈 팬.</p>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -299,8 +304,8 @@ function drawLogScales() {
                                     <img src="/resources/img/team4_img01.jpg" alt="">
                                 </div>
                                 <div class="testimonial__author__text">
-                                    <h5>Ophelia Nunez</h5>
-                                    <span>London</span>
+                                    <h5>주녕미눅</h5>
+                                    <span>감자&칡</span>
                                 </div>
                             </div>
                             <div class="rating">
@@ -310,8 +315,9 @@ function drawLogScales() {
                                 <span class="icon_star"></span>
                                 <span class="icon_star-half_alt"></span>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua viverra lacus vel facilisis.</p>
+                            <p>감자&칡스<br>
+                            봐주는 척하지만 뒤에선 복수의 칼날을 갈고 있다.<br>
+                             언젠간 꼭 복수하고 말 것.</p>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -321,8 +327,8 @@ function drawLogScales() {
                                     <img src="/resources/img/team4_img02.png" alt="">
                                 </div>
                                 <div class="testimonial__author__text">
-                                    <h5>Kerry D.Silva</h5>
-                                    <span>New york</span>
+                                    <h5>심옌&듀딩</h5>
+                                    <span>고굼아&파프리카</span><br><br>
                                 </div>
                             </div>
                             <div class="rating">
@@ -332,8 +338,8 @@ function drawLogScales() {
                                 <span class="icon_star"></span>
                                 <span class="icon_star-half_alt"></span>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua viverra lacus vel facilisis.</p>
+                            <h5>고굼고굼&파프리크아아아앙</h5>
+                            <span>박준영 & 정민욱 담당 일찐.</span><br><br>
                         </div>
                     </div>
                 </div>

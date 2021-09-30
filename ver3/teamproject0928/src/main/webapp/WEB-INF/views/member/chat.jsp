@@ -12,7 +12,7 @@
 
 
 <!-- Css Styles -->
-<link rel="stylesheet" href="/resources/css/style.css" type="text/css">
+<!-- <link rel="stylesheet" href="/resources/css/style.css" type="text/css"> -->
 <%-- include head.jsp --%>
 <jsp:include page="/WEB-INF/views/include/head.jsp" />
 </head>
@@ -39,6 +39,9 @@
                      참여</button>
                   <button class="btn btn-lg bg-warning" onclick="closeSocket();">대화방
                      나가기</button>
+                  <a href="/member/appraisalMember">
+                 	 회원평가
+                  </a>
                   <br /> <br /> <br />
 
                </div>

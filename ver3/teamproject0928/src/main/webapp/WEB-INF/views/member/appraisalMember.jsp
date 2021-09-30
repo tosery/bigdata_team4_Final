@@ -4,7 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<%-- include head.jsp --%>
+<jsp:include page="/WEB-INF/views/include/head.jsp" />
+<jsp:include page="/WEB-INF/views/include/Nav.jsp" />
 </head>
 <body>
 	<form id="frm">

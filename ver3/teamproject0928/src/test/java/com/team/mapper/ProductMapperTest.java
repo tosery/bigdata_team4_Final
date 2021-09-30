@@ -22,7 +22,7 @@ public class ProductMapperTest {
 	@Test
 	public void testInsert() {
 		// 주글 127개 추가하기 테스트
-		productMapper.deleteAll();
+//		productMapper.deleteAll();
 		
 		Random random = new Random();
 		
@@ -32,8 +32,8 @@ public class ProductMapperTest {
 			int pnum = productMapper.nextNum(); // insert할 새글번호 가져오기
 			
 			productVO.setPnum(pnum);
-			productVO.setProductName("단호초코빵");
-			productVO.setSellerid("abcd");
+			productVO.setProductName("Junit테스트");
+			productVO.setSellerid("team4");
 			productVO.setTitle("글제목" + i + " 입니다.");
 			productVO.setDescription("글내용" + i + " 입니다.\n글내용 테스트");
 			productVO.setSellprice(random.nextInt(1000000)); // 조회수 0~999999 임의의 값

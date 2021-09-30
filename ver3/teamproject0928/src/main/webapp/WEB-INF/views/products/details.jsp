@@ -186,7 +186,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="section-title">
-                        <h2>Related Products</h2>
+                        <h2>4팀</h2>
                     </div>
                 </div>
             </div>
@@ -194,7 +194,7 @@
                 <div class="related__products__slider owl-carousel">
                     <div class="col-lg-3">
                         <div class="product__item">
-                            <div class="product__item__pic set-bg" data-setbg="img/shop/product-1.jpg">
+                            <div class="product__item__pic set-bg" data-setbg="/resources/img/sujin.png">
                                 <div class="product__label">
                                     <span>Cupcake</span>
                                 </div>
@@ -210,7 +210,7 @@
                     </div>
                     <div class="col-lg-3">
                         <div class="product__item">
-                            <div class="product__item__pic set-bg" data-setbg="img/shop/product-2.jpg">
+                            <div class="product__item__pic set-bg" data-setbg="/resources/img/yeeun.png">
                                 <div class="product__label">
                                     <span>Cupcake</span>
                                 </div>
@@ -226,7 +226,7 @@
                     </div>
                     <div class="col-lg-3">
                         <div class="product__item">
-                            <div class="product__item__pic set-bg" data-setbg="img/shop/product-3.jpg">
+                            <div class="product__item__pic set-bg" data-setbg="/resources/img/junyeong.png">
                                 <div class="product__label">
                                     <span>Cupcake</span>
                                 </div>
@@ -242,7 +242,7 @@
                     </div>
                     <div class="col-lg-3">
                         <div class="product__item">
-                            <div class="product__item__pic set-bg" data-setbg="img/shop/product-4.jpg">
+                            <div class="product__item__pic set-bg" data-setbg="/resources/img/minwook.jpg">
                                 <div class="product__label">
                                     <span>Cupcake</span>
                                 </div>
@@ -256,38 +256,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="product__item">
-                            <div class="product__item__pic set-bg" data-setbg="img/shop/product-5.jpg">
-                                <div class="product__label">
-                                    <span>Cupcake</span>
-                                </div>
-                            </div>
-                            <div class="product__item__text">
-                                <h6><a href="#">Vanilla Salted Caramel</a></h6>
-                                <div class="product__item__price">$05.00</div>
-                                <div class="cart_add">
-                                    <a href="#">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="product__item">
-                            <div class="product__item__pic set-bg" data-setbg="img/shop/product-6.jpg">
-                                <div class="product__label">
-                                    <span>Cupcake</span>
-                                </div>
-                            </div>
-                            <div class="product__item__text">
-                                <h6><a href="#">German Chocolate</a></h6>
-                                <div class="product__item__price">$14.00</div>
-                                <div class="cart_add">
-                                    <a href="#">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>

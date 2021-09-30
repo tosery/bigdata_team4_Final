@@ -100,10 +100,13 @@ function drawLogScales() {
 --%>
    <!-- Header Section Begin -->
    <div class="header__banner-left"  onclick="location.href='http://localhost:8090/products/productsList?type=T&keyword=코로나';">
+   	<div>
       <h3>코로나19</h3>
       <h3>방역물품</h3>
       <h3>최대50%</h3>
       <h3>클릭</h3>
+   	</div>
+   	<div><img class="fit-picture" src="/resources/img/team4_img02.png"></div>
    </div>
    <jsp:include page="/WEB-INF/views/include/Nav.jsp" />
    <!-- Header Section End -->
@@ -111,7 +114,7 @@ function drawLogScales() {
    <!-- Hero Section Begin -->
    <section class="hero">
       <div class="hero__slider owl-carousel">
-         <div class="hero__item set-bg teamlogo" data-setbg="/resources/img/4team_logo.png" >
+         <div class="hero__item set-bg teamlogo" data-setbg="/resources/img/4team_logo.png" style=" opacity = 0.5" >
             <div class="container">
                <div class="row d-flex justify-content-center">
                   <div class="col-lg-8">

@@ -612,7 +612,7 @@ ol {
   padding: 0 200px 0 200px;
 }
 .hero__item {
-  height: 100vh;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

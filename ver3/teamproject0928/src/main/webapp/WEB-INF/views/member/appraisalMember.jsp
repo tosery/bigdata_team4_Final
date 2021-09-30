@@ -13,6 +13,8 @@
 		<select name="id" class="tempmemberid">
 			<option>abc</option>
 			<option>abcd</option>
+			<option>sye</option>
+			<option>team4</option>
 		</select> 
 		<select class="appraisal">
 
@@ -40,6 +42,12 @@
 				var TempappOption = TempappOptions.badTemperature;
 				break;
 			case 'abcd':
+				var TempappOption = TempappOptions.badTemperature;
+				break;
+			case 'sye':
+				var TempappOption = TempappOptions.badTemperature;
+				break;
+			case 'team4':
 				var TempappOption = TempappOptions.badTemperature;
 				break;
 			}
@@ -90,6 +98,9 @@
 					});
 				});
 	</script>
+	<!-- Footer Section Begin -->
+<jsp:include page="/WEB-INF/views/include/footer.jsp" />
+<!-- Footer Section End -->
 </body>
 
 </html>

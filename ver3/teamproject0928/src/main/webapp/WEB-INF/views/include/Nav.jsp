@@ -45,7 +45,7 @@
                   <div class="header__top__right">
                      <div class="header__top__right__links">
                         <a href="#" class="search-switch"><img
-                           src="/resources/img/icon/search.png" alt=""></a> <a href="#"><img
+                           src="/resources/img/icon/search.png" alt=""></a> <a href="http://localhost:8090/products/productsList?type=T&keyword=%EC%BD%94%EB%A1%9C%EB%82%98"><img
                            src="/resources/img/icon/heart.png" alt=""></a>
                      </div>
                      <div class="header__top__right__cart">

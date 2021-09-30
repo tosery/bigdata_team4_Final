@@ -33,7 +33,7 @@ public class ProductMapperTest {
 			
 			productVO.setPnum(pnum);
 			productVO.setProductName("Junit테스트");
-			productVO.setSellerid("team4");
+			productVO.setSellerid("abcd");
 			productVO.setTitle("글제목" + i + " 입니다.");
 			productVO.setDescription("글내용" + i + " 입니다.\n글내용 테스트");
 			productVO.setSellprice(random.nextInt(1000000)); // 조회수 0~999999 임의의 값

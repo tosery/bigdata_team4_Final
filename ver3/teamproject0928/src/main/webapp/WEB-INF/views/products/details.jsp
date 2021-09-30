@@ -116,7 +116,7 @@
                         <div class="product__details__option">
                             <div class="quantity">
                                 <div class="pro-qty">
-                                    <input type="text" value="2">
+                                    <input type="text" value="1">
                                 </div>
                             </div>
                             <a href="/products/shippinginfo" class="primary-btn">구매 하기</a>

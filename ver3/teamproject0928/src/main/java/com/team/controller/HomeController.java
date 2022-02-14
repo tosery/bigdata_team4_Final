@@ -157,20 +157,20 @@ public class HomeController {
 				Element element = (Element) node;  // item ¿ä¼Ò(Element)
 				Covid19DTO covidDto = new Covid19DTO();
 				
-				String accDefRate = element.getElementsByTagName("accDefRate").item(0).getTextContent();
-				covidDto.setAccDefRate(Double.parseDouble(accDefRate));
+//				String accDefRate = element.getElementsByTagName("accDefRate").item(0).getTextContent();
+//				covidDto.setAccDefRate(Double.parseDouble(accDefRate));
 				
-				String accExamCnt = element.getElementsByTagName("accExamCnt").item(0).getTextContent();
-				covidDto.setAccExamCnt(Integer.parseInt(accExamCnt));
+//				String accExamCnt = element.getElementsByTagName("accExamCnt").item(0).getTextContent();
+//				covidDto.setAccExamCnt(Integer.parseInt(accExamCnt));
 				
-				String accExamCompCnt = element.getElementsByTagName("accExamCompCnt").item(0).getTextContent();
-				covidDto.setAccExamCompCnt(Integer.parseInt(accExamCompCnt));
+//				String accExamCompCnt = element.getElementsByTagName("accExamCompCnt").item(0).getTextContent();
+//				covidDto.setAccExamCompCnt(Integer.parseInt(accExamCompCnt));
 				
-				String careCnt = element.getElementsByTagName("careCnt").item(0).getTextContent();
-				covidDto.setCareCnt(Integer.parseInt(careCnt));
+//				String careCnt = element.getElementsByTagName("careCnt").item(0).getTextContent();
+//				covidDto.setCareCnt(Integer.parseInt(careCnt));
 				
-				String clearCnt = element.getElementsByTagName("clearCnt").item(0).getTextContent();
-				covidDto.setClearCnt(Integer.parseInt(clearCnt));
+//				String clearCnt = element.getElementsByTagName("clearCnt").item(0).getTextContent();
+//				covidDto.setClearCnt(Integer.parseInt(clearCnt));
 				
 				String createDt = element.getElementsByTagName("createDt").item(0).getTextContent();
 				covidDto.setCreateDt(sdf.parse(createDt));
@@ -181,11 +181,11 @@ public class HomeController {
 				String decideCnt = element.getElementsByTagName("decideCnt").item(0).getTextContent();
 				covidDto.setDecideCnt(Integer.parseInt(decideCnt));
 				
-				String examCnt = element.getElementsByTagName("examCnt").item(0).getTextContent();
-				covidDto.setExamCnt(Integer.parseInt(examCnt));
+//				String examCnt = element.getElementsByTagName("examCnt").item(0).getTextContent();
+//				covidDto.setExamCnt(Integer.parseInt(examCnt));
 				
-				String resutlNegCnt = element.getElementsByTagName("resutlNegCnt").item(0).getTextContent();
-				covidDto.setResutlNegCnt(Integer.parseInt(resutlNegCnt));
+//				String resutlNegCnt = element.getElementsByTagName("resutlNegCnt").item(0).getTextContent();
+//				covidDto.setResutlNegCnt(Integer.parseInt(resutlNegCnt));
 				
 				String seq = element.getElementsByTagName("seq").item(0).getTextContent();
 				covidDto.setSeq(Integer.parseInt(seq));
